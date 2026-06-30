@@ -1,15 +1,6 @@
-const hamburger = document.querySelector('.hamburger')
-const navlinks = document.querySelector('.nav-links')
-let menuOpen = false;
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
 
-hamburger.addEventListener('click', () => {
-    if (!menuOpen == false) {
-        navlinks.style.display = "block";
-        menuOpen = true;
-    }
-    else if (menuOpen == true) {
-        navlinks.style.display = "none";
-        menuOpen = false;
-        
-    }
-})
+hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
