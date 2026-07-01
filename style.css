@@ -108,7 +108,7 @@ nav {
     }
 
     .hamburger {
-        display: flex;
+        display: none;
     }
 
     .nav-links {
